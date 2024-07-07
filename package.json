@@ -1,0 +1,15 @@
+{
+  "name": "asus",
+  "version": "1.0.0",
+  "main": "demo_create_mongo_db.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

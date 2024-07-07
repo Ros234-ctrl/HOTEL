@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="script.js"></script>
+     <link rel="stylesheet"  href="style.css">
+     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+     
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+   
+
+   <nav class="navbar">
+<ul  id="list" style="list-style-type: none; " >
+        
+        <li> <a  id="home" onclick="toggleDropdown()"  style="color: aliceblue;  cursor: pointer;text-decoration: none;"  >Home <i class="fa fa-caret-down" ></i></a>
+      
+      <ul class="animate__animated animate__slideInLeft  " id="optn" style="position:absolute; display:none" >
+
+        <li> <a href=""> Find Hotels  <i class="fa-solid fa-hotel"></i></a> 
+     </i>
+        </li><br> 
+
+       <li> <a href="">Flights  <i class="fa-solid fa-plane"></i></a></i></li>
+       <br>
+        <li><a href="">Trains  <i class="fa-solid fa-train-subway"></i></a>
+
+        </li><br>
+        <li> <a href="">car Rentals   <i class="fa-solid fa-car-side"></i></a></i></li>
+        <br>
+     
+     <li><a href="">destination <i class="fa-solid fa-location-dot"></i></a> </i></li>
+     <br>
+    
+     <li> <a href="">Tours <i class="fa-solid fa-globe"></i></a></i></li>
+     <br>
+      </ul>
+
+    <script>
+
+      function toggleDropdown()
+      {
+
+        var optn=document.querySelector('#optn');
+        optn.style.display=(optn.style.display==='block') ? 'none' : 'block';
+      }
+    </script>
+
+    
+
+
+
+    </li>
+
+        <li>  <a href="login.html" id="Log" 
+           style ="color: white;text-decoration: none ; width:auto;"> Login <i class="fa fa-caret-down"></i></a></li>
+        
+          </head>
+          <body>
+          
+
+        
+          
+          <div id="id01" class="modal">
+            
+           
+          </div>
+          
+          <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
+
+      
+          <li><a  style="color: aliceblue; text-decoration: none;"  href="#Blogs">Blogs <i class="fa fa-caret-down"></i></a></li>
+        </div>     
+      
+        <li style="color: aliceblue; text-decoration: none;"  class="sign">sign-up <i class="fa fa-caret-down">  </i>
+        </li>
+
+        <form class="booking-form" action="#" method="post" style="position:absolute; margin-top: 10px; width: 500px; height: 500px;  box-sizing:border-box;border-radius: 10px; overflow-y:scroll ;">
+
+          <div class="elem-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+          </div>
+          <div class="elem-group">
+            <label for="email">Your E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+          </div>
+          <div class="elem-group">
+            <label for="phone">Your Phone</label>
+            <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+          </div>
+          <hr>
+          <div class="elem-group inlined">
+            <label for="adult">Adults</label>
+            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+          </div>
+          <div class="elem-group inlined">
+            <label for="child">Children</label>
+            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+          </div>
+          <div class="elem-group inlined">
+            <label for="checkin-date">Check-in Date</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+          </div>
+          <div class="elem-group inlined">
+            <label for="checkout-date">Check-out Date</label>
+            <input type="date" id="checkout-date" name="checkout" required>
+          </div>
+          <div class="elem-group">
+            <label for="room-selection">Select Room Preference</label>
+            <select id="room-selection" name="room_preference" required>
+                <option value="">Choose a Room from the List</option>
+                <option value="connecting">Connecting</option>
+                <option value="adjoining">Adjoining</option>
+                <option value="adjacent">Adjacent</option>
+            </select>
+          </div>
+          <hr>
+          <div class="elem-group">
+            <label for="message">Anything Else?</label>
+            <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+          </div>
+          <button type="submit">Book The Rooms</button>
+          <script>var currentDateTime = new Date();
+               var year = currentDateTime.getFullYear();
+               var month = (currentDateTime.getMonth() + 1);
+               var date = (currentDateTime.getDate() + 1);
+               
+               if(date < 10) {
+                 date = '0' + date;
+               }
+               if(month < 10) {
+                 month = '0' + month;
+               }
+               
+               var dateTomorrow = year + "-" + month + "-" + date;
+               var checkinElem = document.querySelector("#checkin-date");
+               var checkoutElem = document.querySelector("#checkout-date");
+               
+               checkinElem.setAttribute("min", dateTomorrow);
+               
+               checkinElem.onchange = function () {
+                   checkoutElem.setAttribute("min", this.value);
+               }</script>
+        </form>
+       
+
+          
+         
+     </ul>
+      
+   </nav>
+   
+   <form>
+    <input type="text"   id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+   
+
+    <style>
+    #myInput {
+      background-image: url('/css/searchicon.png');
+      background-position: 0px 10px;
+      background-repeat: no-repeat;
+      /* width: 50%; */
+      font-size: 16px;
+      padding: 12px 20px 12px 40px;
+      border: 1px solid #ddd;
+      /* margin-bottom: 12px; */
+      margin-top: -50px;
+    margin-left: 950px;
+   
+    
+    }
+
+
+ 
+    #myUL {
+      list-style-type: none;
+      padding: 0;
+      margin-top: -20px;
+      margin-left: 150px;
+      position: absolute;
+
+     
+    }
+    
+    #myUL li a {
+   
+      margin-top: -1px; /* Prevent double borders */
+      background-color:transparent;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 15px;
+      color:white;
+
+ margin-left: 800px;
+ width: 200px;
+display:inline-block;
+
+
+
+    }
+    
+    #myUL li a:hover:not(.header) {
+      background-color: #eeeeee23;
+      box-sizing: border-box;
+      border-radius: 20px;
+    }
+    </style>
+    
+
+
+    
+    <ul id="myUL">
+      <li><a href="#">Adele</a></li>
+      <li><a href="#">Agnes</a></li>
+    
+      <li><a href="#">Billy</a></li>
+      <li><a href="#">Bob</a></li>
+    
+      <li><a href="#">Calvin</a></li>
+      <li><a href="#">Christina</a></li>
+      <li><a href="#">Cindy</a></li>
+    </ul>
+    < script>
+  
+      function myFunction() {
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("a")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+              } else {
+                  li[i].style.display = "none";
+              }
+          }
+      }
+      </script>
+      
+    
+  </form>
+  <style> 
+  
+
+
+    input[type=text] {
+
+      outline-color: white;
+      margin-left: 50%;
+      margin-top: 5%;
+      position:absolute;
+      width: 130px;
+      box-sizing: border-box;
+      border: 2px solid #ccccccca;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.743);
+      background-image: url('searchicon.png');
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+    }
+    
+    input[type=text]:focus {
+      width: 20%;
+    }
+    </style>
+  
+
+
+<img src="r.jpg"  id="img1" style= " width: 100vw; min-height: 100vh;  background-attachment: fixed;
+background-size:cover;  border-radius: 0%;  background-image: image-set( '/path/to/image-highres.jpg' 2x)">
+
+
+
+<div id="hotel">
+  
+
+
+</div> 
+<div>
+     <img src="1.jfif" style="margin:-600px 40px 0px 0px ;  float: right;
+     ;">
+</div>
+<div >
+     <!-- <img src="2.jfif" style="margin:-300px 0px 110px 0px;float:left;"> -->
+
+</div>
+
+<div >
+     <img src="4.jfif"  style="margin:-600px 455px 0px 0px;float: right ;">
+</div>
+<div>
+     <img src="5.jfif" style="margin:-600px 0px 200px 50px;float: left;">
+</div>
+<div>
+     <img src="10.jpeg" style="margin:-300px 0px 200px 50px;float: left;">
+</div>
+
+<div>
+     <img src="14.webp" style="margin:-300px 0px 100px 100px;float: left;">
+</div>
+
+<div>
+     <img src="12.jpeg" style="margin:-300px 0px 200px 50px;float: left;">
+</div>
+
+
+<input type="button" value="view more"  id="btn" >
+<i class="fa-solid fa-angles-right fa-beat"></i>
+<br><br>
+
+<section>
+     <h2 style="display: flex;float: left; margin-top: -120px; margin-left: 40%; " >  Blogs and reviews </h2 >  
+
+     <div id="to">
+          <P style="margin-left: 10px; margin-top: 200px; font-size: 10px; ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid accusamus facere ratione,
+                est id dolorum tempora quidem, doloribus modi provident molestias? Architecto, laudantium.</P>
+
+<div id="tw">
+     <P style="font-size: 10px;margin-left: 10px; margin-top: 200px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid accusamus facere ratione, est id dolorum tempora quidem, doloribus modi provident molestias? Architecto, laudantium.</P>
+
+<div id="tr" >
+     <P style="font-size:10px;margin-left: 10px; margin-top: 200px; ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid accusamus facere ratione, est id dolorum tempora quidem, doloribus modi provident molestias? Architecto, laudantium.</P>
+
+</div>
+</div>
+     
+
+</div>
+
+
+</section>
+<div class="rating__star">
+     <i class="rating__star far fa-star"></i>
+     <i class="rating__star far fa-star"></i>
+     <i class="rating__star far fa-star"></i>
+     <i class="rating__star far fa-star"></i>
+     <i class="rating__star far fa-star"></i>
+</div>
+<div class="rating__star2">
+     <i class="rating__star far fa-star"></i>
+     <i class="rating__star far fa-star"></i>
+     <i class="rating__star far fa-star"></i>
+     <i class="rating__star far fa-star"></i>
+     <i class="rating__star far fa-star"></i>
+</div>
+<div class="rating__star3">
+     <i class="rating__star far fa-star"></i>
+     <i class="rating__star far fa-star"></i>
+     <i class="rating__star far fa-star"></i>
+     <i class="rating__star far fa-star"></i>
+     <i class="rating__star far fa-star"></i>
+</div>
+<div id="tom">
+     <footer class="footer">
+          <div class="container bottom_border">
+          <div class="row">
+          <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+          <!--headin5_amrc-->
+          <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+          <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+          <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+          
+          
+          </div>
+          
+          
+          <div class=" col-sm-4 col-md  col-6 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+          <!--headin5_amrc-->
+          <ul class="footer_ul_amrc">
+          <li><a href="http://webenlance.com">Image Rectoucing</a></li>
+          <li><a href="http://webenlance.com">Clipping Path</a></li>
+          <li><a href="http://webenlance.com">Hollow Man Montage</a></li>
+          <li><a href="http://webenlance.com">Ebay & Amazon</a></li>
+          <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+          <li><a href="http://webenlance.com">Image Cropping</a></li>
+          </ul>
+          <!--footer_ul_amrc ends here-->
+          </div>
+          
+          
+          <div class=" col-sm-4 col-md  col-6 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+          <!--headin5_amrc-->
+          <ul class="footer_ul_amrc">
+          <li><a href="http://webenlance.com">Remove Background</a></li>
+          <li><a href="http://webenlance.com">Shadows & Mirror Reflection</a></li>
+          <li><a href="http://webenlance.com">Logo Design</a></li>
+          <li><a href="http://webenlance.com">Vectorization</a></li>
+          <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+          <li><a href="http://webenlance.com">Image Cropping</a></li>
+          </ul>
+          <!--footer_ul_amrc ends here-->
+          </div>
+          
+          
+          <div class=" col-sm-4 col-md  col-12 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+          <!--headin5_amrc ends here-->
+          
+          <ul class="footer_ul2_amrc">
+          <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p style="margin-top: 40px;">Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+          <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><a href="#">https://www.lipsum.com/</a></li>
+        
+          </ul>
+          <!--footer_ul2_amrc ends here-->
+          </div>
+          </div>
+          </div>
+          
+          
+          <div class="container">
+          <ul class="foote_bottom_ul_amrc">
+          <li><a href="http://webenlance.com">Home</a></li>
+          <li><a href="http://webenlance.com">About</a></li>
+          <li><a href="http://webenlance.com">Services</a></li>
+          <li><a href="http://webenlance.com">Pricing</a></li>
+          <li><a href="http://webenlance.com">Blog</a></li>
+          <li><a href="http://webenlance.com">Contact</a></li>
+          </ul>
+          <!--foote_bottom_ul_amrc ends here-->
+          <p class="text-center">Copyright @2017 | Designed With by <a href="#">Your Company Name</a></p>
+          
+          <ul class="social_footer_ul">
+          <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+          <!--social_footer_ul ends here-->
+          </div>
+          
+          </footer>
+
+          
+</body>
+
+</html>

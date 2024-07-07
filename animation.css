@@ -1,0 +1,28 @@
+body, html {
+     height: 100%;
+     margin: 0;
+   }
+   
+   .container {
+     display: flex;
+   
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+   }
+   
+   
+   #welcome {
+     font-family: serif;
+ 
+font-size: 36px;
+     opacity: 0;
+   }
+   #welcome{
+     background-color:rgba(246, 246, 246, 0.143);
+
+box-sizing: border-box;
+border-radius: 5px;
+   }
+ 
+   
